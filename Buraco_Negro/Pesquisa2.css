@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor-tracker {
+  position: fixed;
+  top:0;
+  z-index:9999;
+  left: 0;
+  width: 80px;
+  height: 100px;
+  background-image: url('../imagem/ET.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  /* Para garantir que o elemento não capture os eventos do mouse */
+}
+
+body{
+  /* background-color: #7736D8; */
+  background: url(../svg/buraco_negro.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  overflow: hidden;/*isso impede que a pagina role para baixo*/
+}
+
+h1 {
+  color: #000000;
+  font-family: 'Russo One';
+  font-size: 35px;
+  text-align: center;
+}
+
+.coluna {
+  position: absolute;
+  top: 7rem;
+  right: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+    
+.retangulo {
+  width: 35rem;
+  height: 14rem;
+  background-color: #5929A2;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  box-shadow: -18px 11px 8px -6px rgba(0,0,0,0.6);
+}
+
+.retangulo p{ 
+  display: flex;
+  font-family: 'Noto Sans', sans-serif; 
+  font-size: 18px;
+  color:#ffffff;
+  margin: 5px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+.logo2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One';
+  background: #8e56e1;
+  height: 8vh;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}

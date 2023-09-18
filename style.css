@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor-tracker {
+  position: fixed;
+  top:0;
+  z-index:9999;
+  left: 0;
+  width: 80px;
+  height: 100px;
+  background-image: url('./imagem/ET.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  /* Para garantir que o elemento não capture os eventos do mouse */
+}
+
+body{
+  background-color: #7736D8; 
+  overflow: hidden;/*isso impede que a pagina role para baixo*/
+  
+}
+
+.logo {
+  border:none;
+  width: 300px;
+  padding-bottom: 50%;
+}
+
+h1 {
+  text-align:center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  color:white;
+  line-height: 75px;
+  max-width: 30rem;
+}
+
+header {
+  background-color: #B89AE4; /* cor de fundo da barra de navegação */
+  height: 5rem; /* altura da barra de navegação */
+  text-align: center;
+}
+
+.centro img {
+  width: 32.875rem;
+}
+
+.centro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botoes {
+  margin-top:12rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.botao {
+  background-color: #F44926;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 60px;
+  border-radius: 30px;
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+}
+.botao:hover{
+  background-color: #f5f5f5;
+  transition: background-color 0.5s ease-in-out;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

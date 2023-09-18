@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sistema.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.3.0/remixicon.css"
+    integrity="sha512-0JEaZ1BDR+FsrPtq5Ap9o05MUwn8lKs2GiCcRVdOH0qDcUcCoMKi8fDVJ9gnG8VN1Mp/vuWw2sMO0SQom5th4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./sistema.js" defer></script>
+  <title>Sistema solar</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Curiosidades/Curiosidades.html">Curiosidades</a></li>
+        <li><a href="../Evento/eventos.html">Eventos</a></li>
+        <li><a href="../Jogo/jogo.html">Jogo</a></li>
+        <li><a href="../Sobre_nós/sobre_nós.html">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img class="fundo" src="../svg/fundo_sistema.svg" alt="">
+  <h2 class="titulo">Sistema solar</h2>
+
+  <map>
+    <area shape="circle" coords="782,450,100" onclick="lua()" href="../index.html" />
+    <area shape="default" />
+  </map>
+
+
+
+  <button id="openTerraDialog">
+    <div class="terra"></div>
+  </button>
+  <dialog id="terraDialog">
+    <h1 class="titu">Terra</h1>
+    <p class="planeta">A Terra é o terceiro planeta a partir do Sol em nosso sistema solar e é o único conhecido por
+      abrigar vida. A Terra é um planeta singular, conhecido por sua abundância de vida, água líquida e atmosfera
+      adequada para a existência de seres vivos. Cuidar e preservar nosso planeta é uma responsabilidade compartilhada
+      por todos os habitantes da Terra.</p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openLuaDialog">
+    <div class="Lua"></div>
+  </button>
+  <dialog id="luaDialog">
+    <h1 class="titu">Lua</h1>
+    <p class="planeta">
+      A Lua é o satélite natural da Terra, conhecida por sua superfície marcada por crateras e mares. Com apenas 1/6 da
+      gravidade terrestre, ela influencia as marés e desempenha um papel vital na estabilização do eixo da Terra. A
+      exploração inclui missões Apollo e sondas robóticas, e a Lua também tem relevância cultural e histórica profunda.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+
+  <button id="openMarteDialog">
+    <div class="marte"></div>
+  </button>
+  <dialog id="marteDialog">
+    <h1 class="titu">Marte</h1>
+    <p class="planeta">
+      Marte é o quarto planeta a partir do Sol em nosso sistema solar e é frequentemente chamado de "Planeta Vermelho"
+      devido à sua aparência característica. Marte é um planeta rochoso fascinante com uma paisagem única, atmosfera
+      fina e temperaturas extremas. Ele tem sido alvo de intensa exploração espacial e é considerado um candidato
+      potencial para futuras missões humanas e colonização.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openMercurioDialog">
+    <div class="mercurio"></div>
+  </button>
+  <dialog id="mercurioDialog">
+    <h1 class="titu">Mercúrio</h1>
+    <p class="planeta">
+      Mercúrio é o planeta mais próximo do Sol em nosso sistema solar e é um dos objetos celestes mais fascinantes.
+      Mercúrio é um planeta rochoso e desolado, com uma superfície cheia de crateras e temperaturas extremas. Sua
+      proximidade ao Sol e falta de atmosfera significativa tornam-no um dos lugares mais inóspitos do nosso sistema
+      solar.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openSolDialog">
+    <div class="sol"></div>
+  </button>
+  <dialog id="solDialog">
+    <h1 class="titu">Sol</h1>
+    <p class="planeta">
+      O Sol é uma estrela central do sistema solar, essencial para a vida na Terra. Com 4,6 bilhões de anos, é composto
+      principalmente de hidrogênio e hélio, brilhando graças a reações nucleares. Seu ciclo de atividade solar afeta o
+      clima espacial e sua influência gravitacional mantém a estabilidade do sistema solar. É uma estrela de tamanho
+      médio, mas com massa 330.000 vezes maior que a Terra e diâmetro 109 vezes maior.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openVenusDialog">
+    <div class="venus"></div>
+  </button>
+  <dialog id="venusDialog">
+    <h1 class="titu">Vênus</h1>
+    <p class="planeta">
+      Vênus é um dos planetas mais parecidos com a Terra em termos de tamanho e composição, Vênus é um planeta rochoso
+      com uma atmosfera densa e escaldante, tornando-o um dos lugares mais inóspitos do sistema solar. Sua exploração
+      tem sido desafiadora devido às condições extremas da superfície.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openJupiterDialog">
+    <div class="jupiter"></div>
+  </button>
+  <dialog id="jupiterDialog">
+    <h1 class="titu">Júpiter</h1>
+    <p class="planeta">
+      Júpiter é o maior planeta do sistema solar e é frequentemente chamado de "Rei dos Planetas" devido ao seu tamanho
+      e presença marcante. Júpiter é um gigante gasoso impressionante, com uma atmosfera turbulenta, muitas luas e um
+      sistema de anéis. Ele é um dos objetos mais fascinantes do nosso sistema solar e continua sendo objeto de estudo e
+      exploração espacial.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openSaturnoDialog">
+    <div class="saturno"></div>
+  </button>
+  <dialog id="saturnoDialog">
+    <h1 class="titu">Saturno</h1>
+    <p class="planeta">
+      Saturno é o sexto planeta a partir do Sol e é conhecido por seus impressionantes anéis visíveis até mesmo com
+      telescópios
+      simples. Esses anéis são compostos de partículas de gelo e rocha. Saturno é um dos destinos de exploração espacial
+      em
+      nosso sistema solar.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+  <button id="openUranioDialog">
+    <div class="urano"></div>
+  </button>
+  <dialog id="uranioDialog">
+    <h1 class="titu">Urano</h1>
+    <p class="planeta">
+      Urano é o sétimo planeta a partir do Sol em nosso sistema solar e é um dos gigantes de gelo. Urano é um planeta
+      gigante de gelo com características notáveis, incluindo sua inclinação extrema e sua coloração única. Sua
+      exploração tem sido limitada, mas continua a proporcionar insights sobre os planetas do sistema solar.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+
+  <button id="openNetunoDialog">
+    <div class="netuno"></div>
+  </button>
+  <dialog id="netunoDialog">
+    <h1 class="titu">Netuno</h1>
+    <p class="planeta">
+      Netuno é o oitavo e último planeta do nosso sistema solar, e é um dos planetas gigantes de gelo, semelhante a
+      Urano. Netuno é um planeta gigante de gelo com uma atmosfera turbulenta, luas intrigantes e anéis tênues. Sua
+      distância extrema do Sol e suas condições extremas tornam-no um alvo desafiador para exploração espacial.
+    </p>
+    <button class="fechar">Entendi</button>
+  </dialog>
+
+
+
+  <div class="cursor-tracker"></div>
+
+  <!-- <div class="menu">
+    <a href="#"><i class="ri-menu-line"></i></a>
+  </div> -->
+
+
+
+
+</body>
+
+</html>
