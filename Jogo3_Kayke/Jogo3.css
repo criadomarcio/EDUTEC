@@ -87,7 +87,42 @@ h1 {
     background-color: #218838;
 }
 
-.botao-voltar {
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+header a:hover {
+    opacity: 0.7;
+  }
+  
+.logo2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One';
+    background: #8e56e1;
+    height: 8vh;
+  }
+  
+.navbar {
+    list-style: none;
+    display: flex;
+  }
+  
+.navbar li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+/* .botao-voltar {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -96,4 +131,4 @@ h1 {
     background-color: transparent;
     border: none; 
     cursor: pointer; 
-  }  
+  }   */
