@@ -100,3 +100,14 @@ nav {
   letter-spacing: 3px;
   margin-left: 32px;
 }
+
+.botao-voltar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+
+  background-color: transparent;
+  border: none; 
+  cursor: pointer; 
+} 

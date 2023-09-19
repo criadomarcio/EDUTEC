@@ -86,3 +86,14 @@ h1 {
 #next-button:hover {
     background-color: #218838;
 }
+
+.botao-voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+  
+    background-color: transparent;
+    border: none; 
+    cursor: pointer; 
+  }  
